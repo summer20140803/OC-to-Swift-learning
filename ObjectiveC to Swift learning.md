@@ -25,7 +25,7 @@ let beginning = greeting[..<index]
 let newString = String(beginning)
 ```
 
-![img](SWIFT NOTES.assets/006tNc79ly1g1zu68dz8bj30kc0g23z3-20190526231732732.jpg)
+![img](OCToSwift.assets/006tNc79ly1g1zu68dz8bj30kc0g23z3-20190526231732732.jpg)
 
 ### Unicode标量和码元
 
@@ -40,13 +40,13 @@ Swift 的原生 String 类型建立于 Unicode 标量值之上。一个 Unicode 
 以下的UTF-X Code Unit就是对应的码元。
 
 **UTF-8编码下的表示**
-![img](SWIFT NOTES.assets/006tNc79ly1g1zumgu8b2j30qh0cq3yn-20190526231750958.jpg)
+![img](OCToSwift.assets/006tNc79ly1g1zumgu8b2j30qh0cq3yn-20190526231750958.jpg)
 
 **UTF-16编码下的表示**
-![img](SWIFT NOTES.assets/006tNc79ly1g1zuos9vtcj30qi0cq74e-20190526231816863.jpg)
+![img](OCToSwift.assets/006tNc79ly1g1zuos9vtcj30qi0cq74e-20190526231816863.jpg)
 
 **UTF-32编码下的表示(也叫Unicode标量表示)**
-![img](SWIFT NOTES.assets/006tNc79ly1g1zup2ka1cj30qi0cqaa6-20190526231831773.jpg)
+![img](OCToSwift.assets/006tNc79ly1g1zup2ka1cj30qi0cqaa6-20190526231831773.jpg)
 
 ### 字符串的count和length方法
 
@@ -79,7 +79,7 @@ Swift 的原生 String 类型建立于 Unicode 标量值之上。一个 Unicode 
 * 使用 union(_:)方法来创建一个包含两个合集所有值的新合集；
 * 使用 subtracting(_:)方法来创建一个两个合集当中不包含某个合集值的新合集。
 
-![img](SWIFT NOTES.assets/006tNc79ly1g1zxgqj73sj30v60nn0tl-20190526231857374.jpg)
+![img](OCToSwift.assets/006tNc79ly1g1zxgqj73sj30v60nn0tl-20190526231857374.jpg)
 
 * 使用“相等”运算符 ( == )来判断两个合集是否包含有相同的值；
 * 使用 isSubset(of:) 方法来确定一个合集的所有值是被某合集包含；
@@ -958,7 +958,7 @@ convenience init(parameters) {
 * 指定初始化器必须总是向上委托
 * 便捷初始化器必须总是横向委托
 
-![img](SWIFT NOTES.assets/006tNc79ly1g2dr8c2qf8j30ow0bx74k-20190526231940018.jpg)
+![img](OCToSwift.assets/006tNc79ly1g2dr8c2qf8j30ow0bx74k-20190526231940018.jpg)
 
 ### Swift类的两段式初始化过程
 
@@ -1039,7 +1039,7 @@ class ShoppingListItem: RecipeIngredient {
 
 最后，这三个类的初始化链如图所示。
 
-![img](SWIFT NOTES.assets/006tNc79ly1g2duplykfnj30qs0o8js9-20190526231956086.jpg)
+![img](OCToSwift.assets/006tNc79ly1g2duplykfnj30qs0o8js9-20190526231956086.jpg)
 
 ### 可失败初始化器(init?)
 
@@ -1220,7 +1220,7 @@ john!.card = CreditCard(number: 1234_5678_9012_3456， customer: john!)
 
 即没有申明更多的强引用来额外指向创建的CreditCard对象，只有通过Customer对象的card属性去强引用它。而CreditCard对象也会因为Customer对象的销毁而销毁。
 
-![img](SWIFT NOTES.assets/006tNc79ly1g2ex3pe3ngj30yt0azjrs-20190526232019404.jpg)
+![img](OCToSwift.assets/006tNc79ly1g2ex3pe3ngj30yt0azjrs-20190526232019404.jpg)
 
 此外，Swift 还为你需要关闭运行时安全检查的情况提供了**不安全无主引用**——举例来说，主要用于**性能优化 (因为weak需要额外做一些自动清理的工作)** 。对于所有的不安全操作，你要自己负责检查代码安全性，类似于Objective-C中的 unsafe_unretained 修饰符。
 
