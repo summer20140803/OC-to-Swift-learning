@@ -2,6 +2,10 @@
 
 
 
+#### 本文整合自 Swift5.0 Document，筛选出了 Objective-C 与 Swift 的差异部分，更加适合准备转 Swifter 的 Objective-C  Coder 阅读。
+
+
+
 ## 字符串和字符
 
 ### 字符串是值类型
